@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-signup',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-signup.component.css']
 })
 export class UserSignupComponent {
+  constructor(private router: Router) { }
+  
+
+  appointment(){
+    
+    this.router.navigate(['/appointment']);
+  }
 
 }

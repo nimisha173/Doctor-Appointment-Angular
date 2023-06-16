@@ -12,4 +12,7 @@ export class UsernavComponent {
   finddoctor(){
     this.router.navigate(['/appointment']);
   }
+  userlogin(){
+    this.router.navigate(['/user-login'])
+  }
 }
