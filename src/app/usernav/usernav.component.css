@@ -1,0 +1,17 @@
+.nav-link{
+    color: white;
+    margin-left: 30px;
+    margin-top: 10px;
+    /* font-weight: bold; */
+    
+}
+.phone{
+    color: white;
+   
+    margin-left: 160px;
+    font-weight: revert;
+
+}
+.navbar-brand{
+    margin-right: 180px;
+}
