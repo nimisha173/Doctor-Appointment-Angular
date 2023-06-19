@@ -12,10 +12,16 @@ import { BookingComponent } from './booking/booking.component';
 import { ReviewComponent } from './review/review.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { AdministratorComponent } from './administrator/administrator.component';
-import { AdminfunctionComponent } from './adminfunction/adminfunction.component';
-import { UsernavComponent } from './usernav/usernav.component';
 import { AdminnavComponent } from './adminnav/adminnav.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UsernavComponent } from './usernav/usernav.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule, ToastrService } from 'ngx-toastr';
+import { HttpClientModule } from '@angular/common/http';
+
+
+
+
 
 
 @NgModule({
@@ -30,7 +36,6 @@ import { FormsModule } from '@angular/forms';
     ReviewComponent,
     AdminloginComponent,
     AdministratorComponent,
-    AdminfunctionComponent,
     UsernavComponent,
     AdminnavComponent
   ],
@@ -38,9 +43,20 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
+    HttpClientModule,
+    ReactiveFormsModule
+    
  
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(private toastr: ToastrService) { }
+ }
+
+
+
+

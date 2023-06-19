@@ -1,1 +1,64 @@
+
+<div class="nav">
 <app-adminnav></app-adminnav>
+</div>
+<div class="body" style="padding: 70px">
+  <div class="d-flex justify-content-end">
+    <button (click)="clickAddDoctor()" class="btn btn-outline-primary " style="margin-top: 10px" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Doctor</button>
+  </div>
+<table class="table table-hover mt-5">
+  <thead >
+    <tr>
+        <th scope="col">Doctor Id</th>
+        <th scope="col">Doctor Name</th>
+        <th scope="col">Doctor department</th>
+    </tr>
+</thead>
+
+<tbody>
+    <tr *ngFor="let row of doctorData">
+      <td>{{row.doctorId}}</td>
+      <td>{{row.doctorName}}</td>
+      <td>{{row.department}}</td>
+      
+      <button (click)="onEdit(row)" class="btn btn-info" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal ">Edit</button>
+      <button (click)="deleteDoctor(row)" class="btn btn-danger mx-3">Delete</button>
+    </tr>
+</tbody>
+</table>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Doctor Details</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <form [formGroup]="formValue">
+          <div class="mb-3">
+            <label for="doctorId" class="form-label">Doctor Id</label>
+            <input type="number" formControlName="doctorId" class="form-control" id="doctorId" aria-describedby="emailHelp">
+            
+          </div>
+          <div class="mb-3">
+            <label for="doctorName" class="form-label">Name</label>
+            <input type="text" formControlName="doctorName" class="form-control" id="doctorName">
+          </div>
+          <div class="mb-3">
+            <label for="department" class="form-label">Specialization</label>
+            <input type="text" formControlName="department" class="form-control" id="department">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="cancel" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" *ngIf="showAdd" (click)="postDoctorDetails()" class="btn btn-primary">Add</button>
+        <button type="button" *ngIf="showUpdate" (click)="updateDoctorDetails()" class="btn btn-primary">Update</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

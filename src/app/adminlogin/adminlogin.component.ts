@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class AdminloginComponent {
   constructor(private router: Router) { }
+
   adminlogin(){
     this.router.navigate(['/administrator']);
   }

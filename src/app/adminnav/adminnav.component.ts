@@ -9,9 +9,7 @@ import { Router } from '@angular/router';
 export class AdminnavComponent {
 
   constructor(private router: Router) { }
-  doctor(){
-    this.router.navigate(['/adminfunction']);
-  }
+  
   appointment(){
     this.router.navigate(['/appointment'])
   }

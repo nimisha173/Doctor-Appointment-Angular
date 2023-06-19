@@ -1,0 +1,20 @@
+{
+  "posts": [
+    {
+      "doctorId": 2,
+      "doctorName": "ANANTHU",
+      "department": "CCA",
+      "id": "K9-TaMR"
+    },
+    {
+      "doctorId": 3,
+      "doctorName": "JEBIN",
+      "department": "CARDIAC",
+      "id": "rM_wd94"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
