@@ -9,10 +9,10 @@ import { Router } from '@angular/router';
 export class UsernavComponent {
 
   constructor(private router: Router) { }
-  finddoctor(){
-    this.router.navigate(['/appointment']);
-  }
-  userlogin(){
-    this.router.navigate(['/user-login'])
-  }
+  // finddoctor(){
+  //   this.router.navigate(['/appointment']);
+  // }
+  // userlogin(){
+  //   this.router.navigate(['/user-login'])
+  // }
 }

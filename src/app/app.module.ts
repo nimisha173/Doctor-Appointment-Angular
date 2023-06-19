@@ -18,6 +18,8 @@ import { UsernavComponent } from './usernav/usernav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule, ToastrService } from 'ngx-toastr';
 import { HttpClientModule } from '@angular/common/http';
+import { HomepagecarouselComponent } from './homepagecarousel/homepagecarousel.component';
+
 
 
 
@@ -37,7 +39,8 @@ import { HttpClientModule } from '@angular/common/http';
     AdminloginComponent,
     AdministratorComponent,
     UsernavComponent,
-    AdminnavComponent
+    AdminnavComponent,
+    HomepagecarouselComponent
   ],
   imports: [
     BrowserModule,
