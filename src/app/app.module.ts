@@ -16,7 +16,7 @@ import { AdminnavComponent } from './adminnav/adminnav.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UsernavComponent } from './usernav/usernav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ToastrModule, ToastrService } from 'ngx-toastr';
+// import { ToastrModule, ToastrService } from 'ngx-toastr';
 import { HttpClientModule } from '@angular/common/http';
 import { HomepagecarouselComponent } from './homepagecarousel/homepagecarousel.component';
 
@@ -47,7 +47,7 @@ import { HomepagecarouselComponent } from './homepagecarousel/homepagecarousel.c
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    ToastrModule.forRoot(),
+    // ToastrModule.forRoot(),
     HttpClientModule,
     ReactiveFormsModule
     
@@ -57,7 +57,7 @@ import { HomepagecarouselComponent } from './homepagecarousel/homepagecarousel.c
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  constructor(private toastr: ToastrService) { }
+  // constructor(private toastr: ToastrService) { }
  }
 
 
