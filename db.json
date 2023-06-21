@@ -1,22 +1,16 @@
 {
   "posts": [
     {
-      "doctorId": 2,
-      "doctorName": "ANANTHU",
-      "department": "CCA",
-      "id": "K9-TaMR"
-    },
-    {
-      "doctorId": 3,
-      "doctorName": "JEBIN",
-      "department": "CARDIAC",
-      "id": "rM_wd94"
-    },
-    {
       "doctorId": 1,
-      "doctorName": "hqsfjh",
-      "department": "jgdjhg",
-      "id": "mVkov4V"
+      "doctorName": "Aadil Adil",
+      "department": "Saaaa",
+      "id": 1
+    },
+    {
+      "doctorId": 2,
+      "doctorName": "dsacxz",
+      "department": "fds",
+      "id": 2
     }
   ],
   "comments": [],

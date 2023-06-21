@@ -3,3 +3,9 @@ export class DoctorModel{
     doctorName: string='';
     department:string='';
 }
+
+// export class DoctorModel{
+//     id:number=0;
+//     name: string='';
+//     department:string='';
+// }
